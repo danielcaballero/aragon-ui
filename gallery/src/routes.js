@@ -25,6 +25,8 @@ import PageInfo from './pages/PageInfo'
 import PageProgressBar from './pages/PageProgressBar'
 import PageTransactionProgress from './pages/PageTransactionProgress'
 import PagePopover from './pages/PagePopover'
+import PageModalManager from './pages/PageModalManager'
+import PageModal from './pages/PageModal'
 
 // Containers
 import PageAragonApp from './pages/PageAragonApp'
@@ -96,6 +98,8 @@ export const PAGE_GROUPS = [
       [PageProgressBar, 'ProgressBar', '/progress-bar'],
       [PageTransactionProgress, 'TransactionProgress', '/transaction-progress'],
       [PagePopover, 'Popover', '/Popover'],
+      [PageModalManager, 'ModalManager', '/ModalManager'],
+      [PageModal, 'Modal', '/Modal'],
     ].map(preparePage),
   },
   {
