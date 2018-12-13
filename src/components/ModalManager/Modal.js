@@ -6,9 +6,13 @@ import { Button } from '../'
 import { breakpoint, font } from '../../utils/styles'
 import { noop } from '../../utils'
 
-const Modal = ({ title, body, onHide, More, blocking }) => (
+const Modal = ({ title, body, onHide, More, blocking, maxwidth = 800 }) => (
   <Main>
-    <WrapModal role="alertdialog" onEscapeOutside={blocking ? noop : onHide}>
+    <WrapModal
+      role="alertdialog"
+      onEscapeOutside={blocking ? noop : onHide}
+      maxwidth={maxwidth}
+    >
       <Header>{title}</Header>
       <Body>{body}</Body>
       <Footer>
@@ -36,7 +40,7 @@ const Main = styled.div`
 `
 
 const WrapModal = styled(EscapeOutside)`
-  max-width: 800px;
+  max-width: ${({ maxwidth }) => maxwidth}px;
   padding: 40px 40px 20px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
