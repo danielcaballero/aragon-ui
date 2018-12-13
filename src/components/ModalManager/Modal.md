@@ -60,3 +60,11 @@ Use this property to add an element (preferably a `Button` or `Link`) to the mod
 - Default: `false`
 
 Use this property to define whether the modal container will not hide when the user presses the `ESC` key or if they click outside the modal container.
+
+
+### `maxwidth`
+
+- Type: `number`
+- Default: `800`
+
+Use this property to define the maximum width for the modal container.
