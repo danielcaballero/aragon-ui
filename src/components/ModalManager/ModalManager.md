@@ -23,7 +23,7 @@ const MyModal = ({ onHide }) => <Modal
   body={<p>Body</p>}
   onHide={onHide}
   blocking={true}
-  More={<a href="" target="_blank">Learn more</a>}
+  More={<a href="https://ui.aragon.org/ModalManager" target="_blank">Learn more</a>}
 />
 
 <ModalProvider>
